@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GrockAI - Coming Soon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GrockAI → AnyTool.Pro</title>
   <style>
     body {
       margin: 0;
@@ -16,6 +16,7 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      padding: 1rem;
     }
 
     h1 {
@@ -26,6 +27,12 @@
     p {
       font-size: 1.2rem;
       color: #bbb;
+      max-width: 600px;
+    }
+
+    .highlight {
+      color: #00ffaa;
+      font-weight: bold;
     }
 
     footer {
@@ -35,13 +42,31 @@
       color: #555;
     }
   </style>
+  <script>
+    let countdown = 3;
+    const interval = setInterval(() => {
+      countdown--;
+      const timer = document.getElementById('redirect-msg');
+      if (timer && countdown >= 0) {
+        timer.textContent = `Redirecting to AnyTool.Pro in ${countdown} second${countdown !== 1 ? 's' : ''}...`;
+      }
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = "https://anytool.pro/";
+      }
+    }, 1000);
+  </script>
 </head>
 <body>
 
-  <h1>GrockAI</h1>
-  <p>Our intelligence is evolving... Stay tuned!</p>
+  <h1>GrockAI Has Evolved</h1>
+  <p>
+    Our journey continues at <span class="highlight">AnyTool.Pro</span>,
+    where a powerful suite of tools awaits you.
+  </p>
+  <p id="redirect-msg">Redirecting to AnyTool.Pro in 3 seconds...</p>
 
-  <footer>&copy; 2025 GrockAI.com</footer>
+  <footer>&copy; 2025 GrockAI.com / Now part of AnyTool.Pro</footer>
 
   <!-- Default Statcounter code for GrockAI -->
   <script type="text/javascript">
