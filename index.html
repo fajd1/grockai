@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oops! Not Grok AI — Welcome to AnyTool.Pro</title>
+  <title>Welcome to AnyTool.Pro — Your Ultimate Online Toolkit</title>
+  <meta name="description" content="Discover AnyTool.Pro, your free, all-in-one online toolkit for productivity, development, and creativity. No sign-up required, easy to use digital tools for professionals and creators." />
+  <meta name="keywords" content="AnyTool.Pro, free online tools, productivity tools, developer tools, PDF tools, creative tools, digital toolkit" />
+  <meta name="author" content="AnyTool.Pro Team" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #f0f0f0;
+      padding: 0;
+      background: linear-gradient(135deg, #d7e1ec, #ffffff);
+      color: #2c3e50;
+      font-family: 'Poppins', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -19,27 +24,80 @@
       padding: 1rem;
     }
 
+    main.container {
+      background: #fff;
+      border-radius: 16px;
+      padding: 3rem 3.5rem;
+      max-width: 600px;
+      box-shadow: 0 12px 40px rgba(44, 62, 80, 0.12);
+      user-select: none;
+      /* Removed hover transform and shadow */
+    }
+
+    /* Removed main.container:hover entirely */
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #1a2a4e;
+      letter-spacing: 0.03em;
+    }
+
+    .tagline {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #0073e6;
+      margin-bottom: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #bbb;
-      max-width: 600px;
+      font-size: 1.15rem;
+      color: #4a4a4a;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
     }
 
     .highlight {
-      color: #00ffaa;
-      font-weight: bold;
+      color: #00c6a7;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00c6a7 0%, #0073e6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: default;
     }
 
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.85rem;
-      color: #555;
+    .button {
+      background: linear-gradient(90deg, #0073e6, #00c6a7);
+      color: #fff;
+      padding: 1rem 2.8rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(0, 115, 230, 0.3);
+      transition: box-shadow 0.3s ease, transform 0.25s ease;
+      margin: 0.5rem;
+      user-select: none;
+      min-width: 220px;
+    }
+
+    .button:hover {
+      box-shadow: 0 15px 35px rgba(0, 198, 167, 0.5);
+      transform: scale(1.08);
+    }
+
+    footer.footer {
+      margin-top: 2.8rem;
+      font-size: 0.9rem;
+      color: #999999;
+      user-select: none;
+    }
+
+    a.hidden-link {
+      display: none;
     }
   </style>
 
@@ -49,49 +107,37 @@
     var sc_invisible = 1;
     var sc_security = "2b7489b9";
   </script>
-  <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js"
-    async></script>
-  <noscript>
-    <div class="statcounter">
-      <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
-        <img class="statcounter"
-        src="https://c.statcounter.com/13090240/0/2b7489b9/1/"
-        alt="Web Analytics"
-        referrerPolicy="no-referrer-when-downgrade">
-      </a>
-    </div>
-  </noscript>
-  <!-- End of Statcounter Code -->
-
-  <!-- Redirect Script -->
-  <script>
-    let countdown = 3;
-    const interval = setInterval(() => {
-      countdown--;
-      const timer = document.getElementById('redirect-msg');
-      if (timer && countdown >= 0) {
-        timer.textContent = `Redirecting to AnyTool.Pro in ${countdown} second${countdown !== 1 ? 's' : ''}...`;
-      }
-      if (countdown <= 0) {
-        clearInterval(interval);
-        window.location.href = "https://anytool.pro/";
-      }
-    }, 1000);
-  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 </head>
 <body>
 
-  <h1>This Isn’t Grok AI 😅</h1>
-  <p>
-    Looks like you meant to visit <strong>Grok AI</strong> — but you've landed on <span class="highlight">GrockAI</span>. A common typo, no worries.
-  </p>
-  <p>
-    While you're here, why not check out <span class="highlight">AnyTool.Pro</span>? It’s packed with free online tools for productivity, development, and more. No sign-up. No nonsense.
-  </p>
-  <p id="redirect-msg">Redirecting to AnyTool.Pro in 3 seconds...</p>
+  <main class="container" role="main" aria-labelledby="main-title">
+    <h1 id="main-title">This Isn’t Grok AI 😅</h1>
+    <div class="tagline">Typo? No worries!</div>
+    <p>
+      It looks like you were trying to reach <strong>Grok AI</strong>, but you've landed on <span class="highlight">GrockAI</span> instead. These things happen, and we're glad you're here!
+    </p>
+    <p>
+      While you’re here, we invite you to explore <span class="highlight">AnyTool.Pro</span> — a trusted, free online platform offering a comprehensive set of tools for productivity, development, and creative projects. No sign-up required, no distractions — just tools to help you work smarter and faster.
+    </p>
 
-  <footer>&copy; 2025 GrockAI.com — Redirecting with love to AnyTool.Pro</footer>
+    <button class="button" onclick="redirectToBoth()" aria-label="Go to Grok AI and open AnyTool Pro">Go to Grok AI</button>
+
+    <footer class="footer">&copy; 2025 GrockAI.com — Redirecting with love to AnyTool.Pro</footer>
+  </main>
+
+  <!-- Hidden links for dual navigation -->
+  <a id="linkAnytool" class="hidden-link" href="https://anytool.pro" >AnyTool.Pro</a>
+  <a id="linkGrok" class="hidden-link" href="https://grok.com" target="_blank" rel="noopener noreferrer">Grok AI</a>
+
+  <script>
+    function redirectToBoth() {
+      // Redirect current tab to Grok AI
+      document.getElementById("linkGrok").click();
+      // Open AnyTool.Pro in new tab
+      document.getElementById("linkAnytool").click();
+    }
+  </script>
 
 </body>
 </html>
