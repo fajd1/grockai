@@ -1,140 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome to GrockAI — Your AI Companion</title>
-  <meta name="description" content="Explore GrockAI, your AI companion for productivity, creativity, and development. No sign-up needed, just smart tools to help you get more done." />
-  <meta name="keywords" content="GrockAI, AI companion, productivity tools, creative tools, development tools" />
-  <meta name="author" content="GrockAI Team" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrockAI</title>
+
+  <!-- Prevent indexing -->
+  <meta name="robots" content="noindex, nofollow">
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+    * { box-sizing: border-box; margin:0; padding:0; }
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #d7e1ec, #ffffff);
-      color: #2c3e50;
-      font-family: 'Poppins', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      font-family: "Inter", sans-serif;
+      color: #333;
       text-align: center;
-      padding: 1rem;
+      padding: 0 1rem;
     }
-
-    main.container {
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    p.subline { font-size: 1.1rem; margin-bottom: 2rem; color: #555; }
+    button {
       background: #fff;
-      border-radius: 16px;
-      padding: 3rem 3.5rem;
-      max-width: 600px;
-      box-shadow: 0 12px 40px rgba(44, 62, 80, 0.12);
-      user-select: none;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      color: #1a2a4e;
-      letter-spacing: 0.03em;
-    }
-
-    .tagline {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #0073e6;
-      margin-bottom: 1.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    p {
-      font-size: 1.15rem;
-      color: #4a4a4a;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      color: #00c6a7;
-      font-weight: 700;
-      background: linear-gradient(90deg, #00c6a7 0%, #0073e6 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      cursor: default;
-    }
-
-    .button {
-      background: linear-gradient(90deg, #0073e6, #00c6a7);
-      color: #fff;
-      padding: 1rem 2.8rem;
-      border: none;
-      border-radius: 30px;
+      border: 2px solid #333;
+      color: #333;
+      padding: 0.8rem 2rem;
       font-size: 1.2rem;
-      font-weight: 700;
+      border-radius: 50px;
       cursor: pointer;
-      box-shadow: 0 8px 25px rgba(0, 115, 230, 0.3);
-      transition: box-shadow 0.3s ease, transform 0.25s ease;
-      margin: 0.5rem;
-      user-select: none;
-      min-width: 220px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
-    .button:hover {
-      box-shadow: 0 15px 35px rgba(0, 198, 167, 0.5);
-      transform: scale(1.08);
-    }
-
-    footer.footer {
-      margin-top: 2.8rem;
-      font-size: 0.9rem;
-      color: #999999;
-      user-select: none;
-    }
-
-    a.hidden-link {
-      display: none;
+    button:hover {
+      background: #333;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
   </style>
 
-  <!-- Statcounter Code -->
+  <!-- Statcounter tracking -->
   <script type="text/javascript">
-    var sc_project = 13090240;
-    var sc_invisible = 1;
-    var sc_security = "2b7489b9";
+    var sc_project=13090240; 
+    var sc_invisible=1; 
+    var sc_security="2b7489b9"; 
   </script>
   <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 </head>
 <body>
-
-  <main class="container" role="main" aria-labelledby="main-title">
-    <h1 id="main-title">This Isn’t Grok AI 😅</h1>
-    <div class="tagline">Typo? No worries!</div>
-    <p>
-      It looks like you were trying to reach <strong>Grok AI</strong>, but you've landed on <span class="highlight">GrockAI</span> instead. These things happen, and we're glad you're here!
-    </p>
-    <p>
-      While you’re here, we invite you to explore our trusted, free online platform offering a comprehensive set of tools for productivity, development, and creative projects. No sign-up required, no distractions — just tools to help you work smarter and faster.
-    </p>
-
-    <button class="button" onclick="redirectToBoth()" aria-label="Go to Grok AI and open AnyTool Pro">Go to Grok AI</button>
-
-    <footer class="footer">&copy; 2025 GrockAI.com — Redirecting with love</footer>
-  </main>
-
-  <!-- Hidden links for dual navigation -->
-  <a id="linkAnytool" class="hidden-link" href="https://anytool.pro" ></a>
-  <a id="linkGrok" class="hidden-link" href="https://grok.com" target="_blank" rel="noopener noreferrer"></a>
-
-  <script>
-    function redirectToBoth() {
-      // Redirect current tab to Grok AI
-      document.getElementById("linkGrok").click();
-      // Open AnyTool.Pro in new tab
-      document.getElementById("linkAnytool").click();
-    }
-  </script>
-
+  <div class="container">
+    <h1>Welcome to GrockAI</h1>
+    <p class="subline">Explore our cutting-edge production tools online</p>
+    <button onclick="window.location.href='https://utilzy.com/'">Enter</button>
+  </div>
 </body>
 </html>
